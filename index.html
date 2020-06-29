@@ -1,1 +1,20 @@
-hello java
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id="text1" value="文本" />
+        <script type="text/javascript">
+        //通过id获取相应标签的引用/对象
+           var b=document.getElementById("text1");
+           //通过引用获取标签的属性值
+           alert("改之前："+b.value);
+           b.value="图片";
+           //通过引用设置已有标签的属性值
+           alert("改之后："+b.value);
+
+           //通过引用设置标签另一个/新属性
+           b.name="name";
+           alert(b.name);
+        </script>
+    </body>
+</html>
